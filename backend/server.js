@@ -34,8 +34,6 @@ app.use(helmet());
 // CORS configuration
 app.use(cors({
   origin: [
-    'http://localhost:5173',
-    'http://localhost:3000',
     process.env.CORS_ORIGIN
   ].filter(Boolean),
   credentials: true,
@@ -83,7 +81,7 @@ app.all('*', (req, res) => {
 
 // Global error handler
 app.use((err, req, res, next) => {
-  console.error('❌ Error occurred:');
+  console.error('Error occurred:');
   console.error('Path:', req.path);
   console.error('Method:', req.method);
   console.error('Body:', req.body);
@@ -96,20 +94,19 @@ app.use((err, req, res, next) => {
   });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 const server = app.listen(PORT, '0.0.0.0', () => {
-  console.log(`🚀 Server running on port ${PORT} in ${process.env.NODE_ENV || 'development'} mode`);
-  console.log(`📡 Server accessible at http://localhost:${PORT}`);
-  console.log(`🌐 Health check: http://localhost:${PORT}/api/health`);
+  console.log(`Server running on port ${PORT} in ${process.env.NODE_ENV || 'development'} mode`);
+  console.log(`Server accessible at http://localhost:${PORT}`);
 });
 
 server.on('error', (error) => {
   if (error.code === 'EADDRINUSE') {
-    console.error(`❌ Port ${PORT} is already in use`);
+    console.error(` Port ${PORT} is already in use`);
     process.exit(1);
   } else {
-    console.error('❌ Server error:', error);
+    console.error(' Server error:', error);
   }
 });
 

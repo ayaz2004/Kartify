@@ -1,7 +1,7 @@
 {
-  "name": "family-retail-predictor-backend",
+  "name": "Kartify",
   "version": "1.0.0",
-  "description": "Backend API for Family Retail Predictor - A full-stack retail shopping application",
+  "description": "",
   "main": "backend/server.js",
   "type": "module",
   "scripts": {
@@ -25,7 +25,7 @@
     "nodejs",
     "api"
   ],
-  "author": "Your Name",
+  "author": "",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
