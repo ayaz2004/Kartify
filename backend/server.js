@@ -96,7 +96,7 @@ app.use((err, req, res, next) => {
 
 const PORT = process.env.PORT;
 
-const server = app.listen(PORT, '0.0.0.0', () => {
+const server = app.listen(PORT, () => {
   console.log(`Server running on port ${PORT} in ${process.env.NODE_ENV || 'development'} mode`);
   console.log(`Server accessible at http://localhost:${PORT}`);
 });
