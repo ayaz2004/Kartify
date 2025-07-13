@@ -104,7 +104,7 @@ const Navbar = () => {
                   <div className="w-8 h-8 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center text-white text-sm font-semibold shadow-md group-hover:shadow-lg transition-all duration-200">
                     {user?.name ? user.name.charAt(0).toUpperCase() : 'U'}
                   </div>
-                  <span className="font-medium">Hi, {user?.name || 'User'}!</span>
+                  <span className="font-medium">Hi, {user?.name || 'John'}!</span>
                 </Link>
                 <button 
                   onClick={handleLogout}
