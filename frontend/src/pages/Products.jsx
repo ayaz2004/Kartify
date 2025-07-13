@@ -162,9 +162,9 @@ const Products = () => {
                   
                   {/* Actions */}
                   <div className="space-y-2">
-                    <button className="btn-primary w-full text-sm">
+                    {/* <button className="btn-primary w-full text-sm">
                       Add to Cart
-                    </button>
+                    </button> */}
                     <button className="btn-secondary w-full text-sm">
                       Add to List
                     </button>

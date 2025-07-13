@@ -10,7 +10,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import About from './pages/About';
-import Contact from './pages/Contact';
+// import Contact from './pages/Contact';
 import Profile from './pages/Profile';
 import FamilyDashboard from './pages/FamilyDashboard';
 import ShoppingLists from './pages/ShoppingLists';
@@ -32,7 +32,7 @@ function App() {
               <Route path="/register" element={<Register />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
+              {/* <Route path="/contact" element={<Contact />} /> */}
               <Route path="/profile" element={<Profile />} />
               <Route path="/family" element={<FamilyDashboard />} />
               <Route path="/shopping-lists" element={<ShoppingLists />} />

@@ -50,13 +50,13 @@ const Navbar = () => {
               <span className="mr-2">ℹ️</span>
               About
             </Link>
-            <Link 
+            {/* <Link 
               to="/contact" 
               className={`navbar-link group ${isActive('/contact') ? 'active' : ''}`}
             >
               <span className="mr-2">📞</span>
               Contact
-            </Link>
+            </Link> */}
 
             {/* Authenticated User Links */}
             {isAuthenticated && (
@@ -175,14 +175,14 @@ const Navbar = () => {
                 <span className="mr-3">ℹ️</span>
                 About
               </Link>
-              <Link 
+              {/* <Link 
                 to="/contact" 
                 className={`mobile-nav-link ${isActive('/contact') ? 'active' : ''}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <span className="mr-3">📞</span>
                 Contact
-              </Link>
+              </Link> */}
 
               {isAuthenticated && (
                 <>

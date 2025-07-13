@@ -30,10 +30,10 @@ const Home = () => {
         <div className="relative container mx-auto px-4 text-center text-white z-10">
           <div className="max-w-5xl mx-auto">
             {/* Main Badge */}
-            <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-white/30">
+            {/* <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-white/30">
               <span className="text-yellow-300 mr-2">✨</span>
               <span className="text-sm font-semibold">Trusted by 10,000+ families worldwide</span>
-            </div>
+            </div> */}
 
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight">
               Smart Family
@@ -229,7 +229,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* Stats Section
       <section className="py-24 hero-gradient">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -259,7 +259,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       {!isAuthenticated && (
@@ -275,10 +275,10 @@ const Home = () => {
           
           <div className="relative container mx-auto px-4 text-center">
             <div className="max-w-4xl mx-auto">
-              <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-white/30">
+              {/* <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-white/30">
                 <span className="text-yellow-300 mr-2">🎉</span>
                 <span className="text-sm font-semibold">Special Launch Offer - Limited Time</span>
-              </div>
+              </div> */}
               
               <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-8">
                 Ready to Transform Your 

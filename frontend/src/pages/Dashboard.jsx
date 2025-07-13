@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
+import AISuggestions from '../components/dashboard/AISuggestions';
 
 const Dashboard = () => {
   const { user } = useAuth();
@@ -198,34 +199,7 @@ const Dashboard = () => {
 
         {/* AI Suggestions */}
         <div className="mt-8">
-          <div className="card">
-            <h2 className="text-xl font-bold mb-4">🤖 AI Suggestions</h2>
-            <div className="space-y-3">
-              <div className="flex items-center justify-between p-3 bg-blue-50 rounded-lg">
-                <div>
-                  <p className="font-medium">You usually buy milk every Tuesday</p>
-                  <p className="text-sm text-gray-600">Based on your shopping history</p>
-                </div>
-                <button className="btn-outline text-sm">Add to List</button>
-              </div>
-              
-              <div className="flex items-center justify-between p-3 bg-yellow-50 rounded-lg">
-                <div>
-                  <p className="font-medium">Bread is running low in your inventory</p>
-                  <p className="text-sm text-gray-600">Last updated 3 days ago</p>
-                </div>
-                <button className="btn-outline text-sm">Add to List</button>
-              </div>
-              
-              <div className="flex items-center justify-between p-3 bg-green-50 rounded-lg">
-                <div>
-                  <p className="font-medium">Great deals on apples this week</p>
-                  <p className="text-sm text-gray-600">Save 25% at nearby stores</p>
-                </div>
-                <button className="btn-outline text-sm">View Deals</button>
-              </div>
-            </div>
-          </div>
+          <AISuggestions />
         </div>
       </div>
     </div>
